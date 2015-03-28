@@ -1,0 +1,11 @@
+---
+ - hosts: default
+   sudo: yes
+   vars: 
+     - ruby_version: ruby2.1
+     - rails_postgresql_db_name: kickityball
+
+   roles:
+     - ShadowKoBolt.core
+     - ShadowKoBolt.vagrant-fresh
+     - ShadowKoBolt.rails-common

@@ -1,0 +1,1414 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.xmlsoccer.com/FootballDataDemo.asmx?WSDL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 28 Mar 2015 08:16:57 GMT
+      Content-Length:
+      - '104755'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<wsdl:definitions xmlns:s=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\" xmlns:http=\"http://schemas.xmlsoap.org/wsdl/http/\"
+        xmlns:mime=\"http://schemas.xmlsoap.org/wsdl/mime/\" xmlns:tns=\"http://xmlsoccer.com/\"
+        xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\" xmlns:tm=\"http://microsoft.com/wsdl/mime/textMatching/\"
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" targetNamespace=\"http://xmlsoccer.com/\"
+        xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">\r\n  <wsdl:types>\r\n    <s:schema
+        elementFormDefault=\"qualified\" targetNamespace=\"http://xmlsoccer.com/\">\r\n
+        \     <s:element name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"teamId\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"endDateString\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByTeamAndDateIntervalResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByTeamAndDateIntervalResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByID\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"1\" maxOccurs=\"1\" name=\"Id\" type=\"s:int\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetHistoricMatchesByIDResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByIDResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetTopScorersByLeagueAndSeason\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"seasonDateString\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetTopScorersByLeagueAndSeasonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetTopScorersByLeagueAndSeasonResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetTopScorersByGroupId\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"1\" maxOccurs=\"1\" name=\"groupId\" type=\"s:int\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetTopScorersByGroupIdResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetTopScorersByGroupIdResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByFixtureMatchID\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"1\" maxOccurs=\"1\" name=\"Id\" type=\"s:int\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetHistoricMatchesByFixtureMatchIDResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByFixtureMatchIDResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"endDateString\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByLeagueAndDateIntervalResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByLeagueAndDateIntervalResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"seasonDateString\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetHistoricMatchesByLeagueAndSeasonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByLeagueAndSeasonResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"team1Id\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"team2Id\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"endDateString\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetHistoricMatchesByTeamsAndDateIntervalResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetHistoricMatchesByTeamsAndDateIntervalResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetAllOddsByFixtureMatchId\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"1\" maxOccurs=\"1\" name=\"fixtureMatch_Id\" type=\"s:int\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetAllOddsByFixtureMatchIdResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetAllOddsByFixtureMatchIdResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateInterval\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"endDateString\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateIntervalResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetFixturesByDateIntervalResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateIntervalAndLeague\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"endDateString\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateIntervalAndLeagueResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetFixturesByDateIntervalAndLeagueResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateIntervalAndTeam\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"startDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"endDateString\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"teamId\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByDateIntervalAndTeamResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetFixturesByDateIntervalAndTeamResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetAllTeams\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetAllTeamsResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetAllTeamsResult\">\r\n              <s:complexType mixed=\"true\">\r\n
+        \               <s:sequence>\r\n                  <s:any />\r\n                </s:sequence>\r\n
+        \             </s:complexType>\r\n            </s:element>\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetAllLeagues\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetAllLeaguesResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetAllLeaguesResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByLeagueAndSeason\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"seasonDateString\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"league\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetFixturesByLeagueAndSeasonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetFixturesByLeagueAndSeasonResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetLeagueStandingsBySeason\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"seasonDateString\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetLeagueStandingsBySeasonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetLeagueStandingsBySeasonResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetAllTeamsByLeagueAndSeason\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"seasonDateString\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetAllTeamsByLeagueAndSeasonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetAllTeamsByLeagueAndSeasonResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetEarliestMatchDatePerLeague\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetEarliestMatchDatePerLeagueResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetEarliestMatchDatePerLeagueResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetLiveScore\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetLiveScoreResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetLiveScoreResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetLiveScoreByLeague\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetLiveScoreByLeagueResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetLiveScoreByLeagueResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetPlayersByTeam\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"teamId\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetPlayersByTeamResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetPlayersByTeamResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetPlayerById\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element minOccurs=\"1\"
+        maxOccurs=\"1\" name=\"playerId\" type=\"s:int\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetPlayerByIdResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetPlayerByIdResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetTeam\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"teamName\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetTeamResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetTeamResult\">\r\n              <s:complexType
+        mixed=\"true\">\r\n                <s:sequence>\r\n                  <s:any
+        />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"GetOddsByFixtureMatchId\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"fixtureMatch_Id\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetOddsByFixtureMatchIdResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetOddsByFixtureMatchIdResult\">\r\n              <s:complexType mixed=\"true\">\r\n
+        \               <s:sequence>\r\n                  <s:any />\r\n                </s:sequence>\r\n
+        \             </s:complexType>\r\n            </s:element>\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetOddsByFixtureMatchId2\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"fixtureMatch_Id\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"GetOddsByFixtureMatchId2Response\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"GetOddsByFixtureMatchId2Result\">\r\n              <s:complexType mixed=\"true\">\r\n
+        \               <s:sequence>\r\n                  <s:any />\r\n                </s:sequence>\r\n
+        \             </s:complexType>\r\n            </s:element>\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetNextMatchOddsByLeague\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ApiKey\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"league\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"GetNextMatchOddsByLeagueResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"GetNextMatchOddsByLeagueResult\">\r\n
+        \             <s:complexType mixed=\"true\">\r\n                <s:sequence>\r\n
+        \                 <s:any />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"CheckApiKey\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"ApiKey\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"CheckApiKeyResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CheckApiKeyResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"string\"
+        nillable=\"true\" type=\"s:string\" />\r\n    </s:schema>\r\n  </wsdl:types>\r\n
+        \ <wsdl:message name=\"GetHistoricMatchesByTeamAndDateIntervalSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByTeamAndDateInterval\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamAndDateIntervalSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByTeamAndDateIntervalResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByID\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByIDResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetTopScorersByLeagueAndSeason\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetTopScorersByLeagueAndSeasonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetTopScorersByGroupId\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetTopScorersByGroupIdResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByFixtureMatchID\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByFixtureMatchIDResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByLeagueAndDateInterval\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByLeagueAndDateIntervalResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByLeagueAndSeason\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByLeagueAndSeasonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamsAndDateIntervalSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByTeamsAndDateInterval\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamsAndDateIntervalSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetHistoricMatchesByTeamsAndDateIntervalResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllOddsByFixtureMatchId\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllOddsByFixtureMatchIdResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateInterval\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateIntervalResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateIntervalAndLeague\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateIntervalAndLeagueResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndTeamSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateIntervalAndTeam\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndTeamSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByDateIntervalAndTeamResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllTeams\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetAllTeamsSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetAllTeamsResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetAllLeaguesSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetAllLeagues\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllLeaguesSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllLeaguesResponse\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByLeagueAndSeason\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetFixturesByLeagueAndSeasonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetLeagueStandingsBySeason\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetLeagueStandingsBySeasonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllTeamsByLeagueAndSeason\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetAllTeamsByLeagueAndSeasonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetEarliestMatchDatePerLeague\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetEarliestMatchDatePerLeagueResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetLiveScore\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetLiveScoreSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetLiveScoreResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetLiveScoreByLeagueSoapIn\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetLiveScoreByLeague\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetLiveScoreByLeagueSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetLiveScoreByLeagueResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetPlayersByTeamSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetPlayersByTeam\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayersByTeamSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetPlayersByTeamResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayerByIdSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetPlayerById\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetPlayerByIdSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:GetPlayerByIdResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetTeamSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:GetTeam\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTeamSoapOut\">\r\n    <wsdl:part
+        name=\"parameters\" element=\"tns:GetTeamResponse\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetOddsByFixtureMatchIdSoapIn\">\r\n    <wsdl:part
+        name=\"parameters\" element=\"tns:GetOddsByFixtureMatchId\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetOddsByFixtureMatchIdSoapOut\">\r\n    <wsdl:part
+        name=\"parameters\" element=\"tns:GetOddsByFixtureMatchIdResponse\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2SoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetOddsByFixtureMatchId2\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2SoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetOddsByFixtureMatchId2Response\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetNextMatchOddsByLeague\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:GetNextMatchOddsByLeagueResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"CheckApiKeySoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:CheckApiKey\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"CheckApiKeySoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:CheckApiKeyResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetHistoricMatchesByTeamAndDateIntervalHttpGetIn\">\r\n    <wsdl:part
+        name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamId\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\" />\r\n    <wsdl:part
+        name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetHistoricMatchesByTeamAndDateIntervalHttpGetOut\">\r\n    <wsdl:part
+        name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"groupId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamsAndDateIntervalHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"team1Id\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"team2Id\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\" />\r\n    <wsdl:part
+        name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetHistoricMatchesByTeamsAndDateIntervalHttpGetOut\">\r\n    <wsdl:part
+        name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueHttpGetIn\">\r\n
+        \   <wsdl:part name=\"league\" type=\"s:string\" />\r\n    <wsdl:part name=\"ApiKey\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndTeamHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"teamId\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetFixturesByDateIntervalAndTeamHttpGetOut\">\r\n    <wsdl:part
+        name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetAllTeamsHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllLeaguesHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetAllLeaguesHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"league\" type=\"s:string\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetLiveScoreHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreByLeagueHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreByLeagueHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayersByTeamHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayersByTeamHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayerByIdHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"playerId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayerByIdHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTeamHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamName\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTeamHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchIdHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchIdHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2HttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2HttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueHttpGetOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"CheckApiKeyHttpGetIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"CheckApiKeyHttpGetOut\">\r\n    <wsdl:part name=\"Body\"
+        element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamAndDateIntervalHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamId\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetHistoricMatchesByTeamAndDateIntervalHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByIDHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByLeagueAndSeasonHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"groupId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTopScorersByGroupIdHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByFixtureMatchIDHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetHistoricMatchesByLeagueAndDateIntervalHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByLeagueAndSeasonHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetHistoricMatchesByTeamsAndDateIntervalHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"team1Id\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"team2Id\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\" />\r\n    <wsdl:part
+        name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"GetHistoricMatchesByTeamsAndDateIntervalHttpPostOut\">\r\n    <wsdl:part
+        name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllOddsByFixtureMatchIdHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueHttpPostIn\">\r\n
+        \   <wsdl:part name=\"league\" type=\"s:string\" />\r\n    <wsdl:part name=\"ApiKey\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetFixturesByDateIntervalAndLeagueHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByDateIntervalAndTeamHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"startDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"endDateString\" type=\"s:string\"
+        />\r\n    <wsdl:part name=\"teamId\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetFixturesByDateIntervalAndTeamHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetAllTeamsHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllLeaguesHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetAllLeaguesHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"league\" type=\"s:string\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"GetFixturesByLeagueAndSeasonHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLeagueStandingsBySeasonHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n    <wsdl:part name=\"seasonDateString\" type=\"s:string\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetAllTeamsByLeagueAndSeasonHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetEarliestMatchDatePerLeagueHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"GetLiveScoreHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreByLeagueHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetLiveScoreByLeagueHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayersByTeamHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayersByTeamHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayerByIdHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"playerId\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetPlayerByIdHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTeamHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"teamName\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetTeamHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchIdHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchIdHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2HttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"fixtureMatch_Id\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetOddsByFixtureMatchId2HttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n    <wsdl:part name=\"league\"
+        type=\"s:string\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"GetNextMatchOddsByLeagueHttpPostOut\">\r\n
+        \   <wsdl:part name=\"Body\" />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"CheckApiKeyHttpPostIn\">\r\n
+        \   <wsdl:part name=\"ApiKey\" type=\"s:string\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"CheckApiKeyHttpPostOut\">\r\n    <wsdl:part name=\"Body\"
+        element=\"tns:string\" />\r\n  </wsdl:message>\r\n  <wsdl:portType name=\"FootballDataDemoSoap\">\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByTeamAndDateIntervalSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamAndDateIntervalSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByIDSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetHistoricMatchesByIDSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTopScorersByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetTopScorersByLeagueAndSeasonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetTopScorersByLeagueAndSeasonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTopScorersByGroupId\">\r\n      <wsdl:input
+        message=\"tns:GetTopScorersByGroupIdSoapIn\" />\r\n      <wsdl:output message=\"tns:GetTopScorersByGroupIdSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByFixtureMatchID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByFixtureMatchIDSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByFixtureMatchIDSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndSeasonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndSeasonSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllOddsByFixtureMatchId\">\r\n
+        \     <wsdl:input message=\"tns:GetAllOddsByFixtureMatchIdSoapIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetAllOddsByFixtureMatchIdSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByDateIntervalSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByDateIntervalAndLeague\">\r\n      <wsdl:input
+        message=\"tns:GetFixturesByDateIntervalAndLeagueSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByDateIntervalAndLeagueSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByDateIntervalAndTeam\">\r\n      <wsdl:input
+        message=\"tns:GetFixturesByDateIntervalAndTeamSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByDateIntervalAndTeamSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllTeams\">\r\n      <wsdl:input message=\"tns:GetAllTeamsSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetAllTeamsSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllLeagues\">\r\n      <wsdl:input message=\"tns:GetAllLeaguesSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetAllLeaguesSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetFixturesByLeagueAndSeasonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByLeagueAndSeasonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLeagueStandingsBySeason\">\r\n      <wsdl:input
+        message=\"tns:GetLeagueStandingsBySeasonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetLeagueStandingsBySeasonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetAllTeamsByLeagueAndSeasonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetAllTeamsByLeagueAndSeasonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetEarliestMatchDatePerLeague\">\r\n      <wsdl:input
+        message=\"tns:GetEarliestMatchDatePerLeagueSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetEarliestMatchDatePerLeagueSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScore\">\r\n      <wsdl:input message=\"tns:GetLiveScoreSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScoreByLeague\">\r\n      <wsdl:input message=\"tns:GetLiveScoreByLeagueSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreByLeagueSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetPlayersByTeam\">\r\n
+        \     <wsdl:input message=\"tns:GetPlayersByTeamSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetPlayersByTeamSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayerById\">\r\n      <wsdl:input message=\"tns:GetPlayerByIdSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetPlayerByIdSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTeam\">\r\n      <wsdl:input message=\"tns:GetTeamSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:GetTeamSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId\">\r\n      <wsdl:input
+        message=\"tns:GetOddsByFixtureMatchIdSoapIn\" />\r\n      <wsdl:output message=\"tns:GetOddsByFixtureMatchIdSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetOddsByFixtureMatchId2\">\r\n
+        \     <wsdl:input message=\"tns:GetOddsByFixtureMatchId2SoapIn\" />\r\n      <wsdl:output
+        message=\"tns:GetOddsByFixtureMatchId2SoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetNextMatchOddsByLeague\">\r\n      <wsdl:input
+        message=\"tns:GetNextMatchOddsByLeagueSoapIn\" />\r\n      <wsdl:output message=\"tns:GetNextMatchOddsByLeagueSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"CheckApiKey\">\r\n
+        \     <wsdl:input message=\"tns:CheckApiKeySoapIn\" />\r\n      <wsdl:output
+        message=\"tns:CheckApiKeySoapOut\" />\r\n    </wsdl:operation>\r\n  </wsdl:portType>\r\n
+        \ <wsdl:portType name=\"FootballDataDemoHttpGet\">\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n      <wsdl:input message=\"tns:GetHistoricMatchesByTeamAndDateIntervalHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamAndDateIntervalHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByIDHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetHistoricMatchesByIDHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTopScorersByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetTopScorersByLeagueAndSeasonHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetTopScorersByLeagueAndSeasonHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTopScorersByGroupId\">\r\n      <wsdl:input
+        message=\"tns:GetTopScorersByGroupIdHttpGetIn\" />\r\n      <wsdl:output message=\"tns:GetTopScorersByGroupIdHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByFixtureMatchID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByFixtureMatchIDHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByFixtureMatchIDHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndSeasonHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndSeasonHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllOddsByFixtureMatchId\">\r\n
+        \     <wsdl:input message=\"tns:GetAllOddsByFixtureMatchIdHttpGetIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetAllOddsByFixtureMatchIdHttpGetOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalHttpGetIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetFixturesByDateIntervalHttpGetOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndLeague\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalAndLeagueHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetFixturesByDateIntervalAndLeagueHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndTeam\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalAndTeamHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetFixturesByDateIntervalAndTeamHttpGetOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllTeams\">\r\n
+        \     <wsdl:input message=\"tns:GetAllTeamsHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetAllTeamsHttpGetOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllLeagues\">\r\n      <wsdl:input message=\"tns:GetAllLeaguesHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetAllLeaguesHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetFixturesByLeagueAndSeasonHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByLeagueAndSeasonHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLeagueStandingsBySeason\">\r\n      <wsdl:input
+        message=\"tns:GetLeagueStandingsBySeasonHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetLeagueStandingsBySeasonHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetAllTeamsByLeagueAndSeasonHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetAllTeamsByLeagueAndSeasonHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetEarliestMatchDatePerLeague\">\r\n      <wsdl:input
+        message=\"tns:GetEarliestMatchDatePerLeagueHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetEarliestMatchDatePerLeagueHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScore\">\r\n      <wsdl:input message=\"tns:GetLiveScoreHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScoreByLeague\">\r\n      <wsdl:input message=\"tns:GetLiveScoreByLeagueHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreByLeagueHttpGetOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetPlayersByTeam\">\r\n
+        \     <wsdl:input message=\"tns:GetPlayersByTeamHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetPlayersByTeamHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetPlayerById\">\r\n      <wsdl:input message=\"tns:GetPlayerByIdHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetPlayerByIdHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTeam\">\r\n      <wsdl:input message=\"tns:GetTeamHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:GetTeamHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId\">\r\n      <wsdl:input
+        message=\"tns:GetOddsByFixtureMatchIdHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetOddsByFixtureMatchIdHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId2\">\r\n      <wsdl:input
+        message=\"tns:GetOddsByFixtureMatchId2HttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetOddsByFixtureMatchId2HttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetNextMatchOddsByLeague\">\r\n      <wsdl:input
+        message=\"tns:GetNextMatchOddsByLeagueHttpGetIn\" />\r\n      <wsdl:output
+        message=\"tns:GetNextMatchOddsByLeagueHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"CheckApiKey\">\r\n      <wsdl:input message=\"tns:CheckApiKeyHttpGetIn\"
+        />\r\n      <wsdl:output message=\"tns:CheckApiKeyHttpGetOut\" />\r\n    </wsdl:operation>\r\n
+        \ </wsdl:portType>\r\n  <wsdl:portType name=\"FootballDataDemoHttpPost\">\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByTeamAndDateIntervalHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamAndDateIntervalHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByIDHttpPostIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetHistoricMatchesByIDHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetTopScorersByLeagueAndSeason\">\r\n
+        \     <wsdl:input message=\"tns:GetTopScorersByLeagueAndSeasonHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetTopScorersByLeagueAndSeasonHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetTopScorersByGroupId\">\r\n
+        \     <wsdl:input message=\"tns:GetTopScorersByGroupIdHttpPostIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetTopScorersByGroupIdHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByFixtureMatchID\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByFixtureMatchIDHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByFixtureMatchIDHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndDateIntervalHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByLeagueAndSeasonHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByLeagueAndSeasonHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetHistoricMatchesByTeamsAndDateIntervalHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllOddsByFixtureMatchId\">\r\n
+        \     <wsdl:input message=\"tns:GetAllOddsByFixtureMatchIdHttpPostIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetAllOddsByFixtureMatchIdHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateInterval\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalHttpPostIn\" />\r\n
+        \     <wsdl:output message=\"tns:GetFixturesByDateIntervalHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndLeague\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalAndLeagueHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetFixturesByDateIntervalAndLeagueHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndTeam\">\r\n
+        \     <wsdl:input message=\"tns:GetFixturesByDateIntervalAndTeamHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetFixturesByDateIntervalAndTeamHttpPostOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllTeams\">\r\n
+        \     <wsdl:input message=\"tns:GetAllTeamsHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetAllTeamsHttpPostOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllLeagues\">\r\n      <wsdl:input message=\"tns:GetAllLeaguesHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetAllLeaguesHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetFixturesByLeagueAndSeasonHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetFixturesByLeagueAndSeasonHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLeagueStandingsBySeason\">\r\n      <wsdl:input
+        message=\"tns:GetLeagueStandingsBySeasonHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetLeagueStandingsBySeasonHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <wsdl:input
+        message=\"tns:GetAllTeamsByLeagueAndSeasonHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetAllTeamsByLeagueAndSeasonHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetEarliestMatchDatePerLeague\">\r\n      <wsdl:input
+        message=\"tns:GetEarliestMatchDatePerLeagueHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetEarliestMatchDatePerLeagueHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScore\">\r\n      <wsdl:input message=\"tns:GetLiveScoreHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetLiveScoreByLeague\">\r\n      <wsdl:input message=\"tns:GetLiveScoreByLeagueHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetLiveScoreByLeagueHttpPostOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetPlayersByTeam\">\r\n
+        \     <wsdl:input message=\"tns:GetPlayersByTeamHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetPlayersByTeamHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetPlayerById\">\r\n      <wsdl:input message=\"tns:GetPlayerByIdHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetPlayerByIdHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTeam\">\r\n      <wsdl:input message=\"tns:GetTeamHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:GetTeamHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId\">\r\n      <wsdl:input
+        message=\"tns:GetOddsByFixtureMatchIdHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetOddsByFixtureMatchIdHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId2\">\r\n      <wsdl:input
+        message=\"tns:GetOddsByFixtureMatchId2HttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetOddsByFixtureMatchId2HttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetNextMatchOddsByLeague\">\r\n      <wsdl:input
+        message=\"tns:GetNextMatchOddsByLeagueHttpPostIn\" />\r\n      <wsdl:output
+        message=\"tns:GetNextMatchOddsByLeagueHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"CheckApiKey\">\r\n      <wsdl:input message=\"tns:CheckApiKeyHttpPostIn\"
+        />\r\n      <wsdl:output message=\"tns:CheckApiKeyHttpPostOut\" />\r\n    </wsdl:operation>\r\n
+        \ </wsdl:portType>\r\n  <wsdl:binding name=\"FootballDataDemoSoap\" type=\"tns:FootballDataDemoSoap\">\r\n
+        \   <soap:binding transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <soap:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByTeamAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByID\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByID\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByLeagueAndSeason\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetTopScorersByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByGroupId\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetTopScorersByGroupId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByFixtureMatchID\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByFixtureMatchID\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n      <soap:operation
+        soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByLeagueAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n      <soap:operation
+        soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByTeamsAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllOddsByFixtureMatchId\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetAllOddsByFixtureMatchId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateInterval\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateIntervalAndLeague\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateIntervalAndLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateIntervalAndTeam\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateIntervalAndTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeams\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetAllTeams\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllLeagues\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetAllLeagues\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByLeagueAndSeason\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetFixturesByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLeagueStandingsBySeason\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetLeagueStandingsBySeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetAllTeamsByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetEarliestMatchDatePerLeague\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetEarliestMatchDatePerLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScore\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetLiveScore\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScoreByLeague\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetLiveScoreByLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayersByTeam\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetPlayersByTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayerById\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetPlayerById\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTeam\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetOddsByFixtureMatchId\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetOddsByFixtureMatchId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetOddsByFixtureMatchId2\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetOddsByFixtureMatchId2\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetNextMatchOddsByLeague\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/GetNextMatchOddsByLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"CheckApiKey\">\r\n      <soap:operation soapAction=\"http://xmlsoccer.com/CheckApiKey\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"FootballDataDemoSoap12\" type=\"tns:FootballDataDemoSoap\">\r\n
+        \   <soap12:binding transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <soap12:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByTeamAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByID\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByID\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByLeagueAndSeason\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetTopScorersByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByGroupId\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetTopScorersByGroupId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByFixtureMatchID\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByFixtureMatchID\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n      <soap12:operation
+        soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByLeagueAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n      <soap12:operation
+        soapAction=\"http://xmlsoccer.com/GetHistoricMatchesByTeamsAndDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllOddsByFixtureMatchId\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetAllOddsByFixtureMatchId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateInterval\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateInterval\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateIntervalAndLeague\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateIntervalAndLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateIntervalAndTeam\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetFixturesByDateIntervalAndTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeams\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetAllTeams\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllLeagues\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetAllLeagues\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByLeagueAndSeason\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetFixturesByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLeagueStandingsBySeason\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetLeagueStandingsBySeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetAllTeamsByLeagueAndSeason\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetEarliestMatchDatePerLeague\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetEarliestMatchDatePerLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScore\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetLiveScore\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScoreByLeague\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetLiveScoreByLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayersByTeam\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetPlayersByTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayerById\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetPlayerById\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTeam\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetTeam\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetOddsByFixtureMatchId\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetOddsByFixtureMatchId\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetOddsByFixtureMatchId2\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetOddsByFixtureMatchId2\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetNextMatchOddsByLeague\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/GetNextMatchOddsByLeague\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"CheckApiKey\">\r\n      <soap12:operation soapAction=\"http://xmlsoccer.com/CheckApiKey\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"FootballDataDemoHttpGet\" type=\"tns:FootballDataDemoHttpGet\">\r\n
+        \   <http:binding verb=\"GET\" />\r\n    <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <http:operation location=\"/GetHistoricMatchesByTeamAndDateInterval\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByID\">\r\n      <http:operation location=\"/GetHistoricMatchesByID\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByLeagueAndSeason\">\r\n      <http:operation location=\"/GetTopScorersByLeagueAndSeason\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTopScorersByGroupId\">\r\n      <http:operation location=\"/GetTopScorersByGroupId\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByFixtureMatchID\">\r\n      <http:operation location=\"/GetHistoricMatchesByFixtureMatchID\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n      <http:operation
+        location=\"/GetHistoricMatchesByLeagueAndDateInterval\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n
+        \     <http:operation location=\"/GetHistoricMatchesByLeagueAndSeason\" />\r\n
+        \     <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n      <http:operation
+        location=\"/GetHistoricMatchesByTeamsAndDateInterval\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetAllOddsByFixtureMatchId\">\r\n
+        \     <http:operation location=\"/GetAllOddsByFixtureMatchId\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateInterval\">\r\n
+        \     <http:operation location=\"/GetFixturesByDateInterval\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndLeague\">\r\n
+        \     <http:operation location=\"/GetFixturesByDateIntervalAndLeague\" />\r\n
+        \     <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByDateIntervalAndTeam\">\r\n      <http:operation location=\"/GetFixturesByDateIntervalAndTeam\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeams\">\r\n      <http:operation location=\"/GetAllTeams\" />\r\n
+        \     <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllLeagues\">\r\n      <http:operation location=\"/GetAllLeagues\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetFixturesByLeagueAndSeason\">\r\n      <http:operation location=\"/GetFixturesByLeagueAndSeason\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLeagueStandingsBySeason\">\r\n      <http:operation location=\"/GetLeagueStandingsBySeason\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <http:operation location=\"/GetAllTeamsByLeagueAndSeason\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetEarliestMatchDatePerLeague\">\r\n      <http:operation location=\"/GetEarliestMatchDatePerLeague\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScore\">\r\n      <http:operation location=\"/GetLiveScore\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetLiveScoreByLeague\">\r\n      <http:operation location=\"/GetLiveScoreByLeague\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayersByTeam\">\r\n      <http:operation location=\"/GetPlayersByTeam\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayerById\">\r\n      <http:operation location=\"/GetPlayerById\"
+        />\r\n      <wsdl:input>\r\n        <http:urlEncoded />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetTeam\">\r\n      <http:operation location=\"/GetTeam\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOddsByFixtureMatchId\">\r\n
+        \     <http:operation location=\"/GetOddsByFixtureMatchId\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOddsByFixtureMatchId2\">\r\n
+        \     <http:operation location=\"/GetOddsByFixtureMatchId2\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetNextMatchOddsByLeague\">\r\n
+        \     <http:operation location=\"/GetNextMatchOddsByLeague\" />\r\n      <wsdl:input>\r\n
+        \       <http:urlEncoded />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"CheckApiKey\">\r\n      <http:operation
+        location=\"/CheckApiKey\" />\r\n      <wsdl:input>\r\n        <http:urlEncoded
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml
+        part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"FootballDataDemoHttpPost\" type=\"tns:FootballDataDemoHttpPost\">\r\n
+        \   <http:binding verb=\"POST\" />\r\n    <wsdl:operation name=\"GetHistoricMatchesByTeamAndDateInterval\">\r\n
+        \     <http:operation location=\"/GetHistoricMatchesByTeamAndDateInterval\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByID\">\r\n      <http:operation
+        location=\"/GetHistoricMatchesByID\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetTopScorersByLeagueAndSeason\">\r\n
+        \     <http:operation location=\"/GetTopScorersByLeagueAndSeason\" />\r\n
+        \     <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTopScorersByGroupId\">\r\n      <http:operation
+        location=\"/GetTopScorersByGroupId\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetHistoricMatchesByFixtureMatchID\">\r\n
+        \     <http:operation location=\"/GetHistoricMatchesByFixtureMatchID\" />\r\n
+        \     <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByLeagueAndDateInterval\">\r\n
+        \     <http:operation location=\"/GetHistoricMatchesByLeagueAndDateInterval\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetHistoricMatchesByLeagueAndSeason\">\r\n      <http:operation
+        location=\"/GetHistoricMatchesByLeagueAndSeason\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetHistoricMatchesByTeamsAndDateInterval\">\r\n      <http:operation
+        location=\"/GetHistoricMatchesByTeamsAndDateInterval\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllOddsByFixtureMatchId\">\r\n      <http:operation location=\"/GetAllOddsByFixtureMatchId\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByDateInterval\">\r\n      <http:operation
+        location=\"/GetFixturesByDateInterval\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetFixturesByDateIntervalAndLeague\">\r\n
+        \     <http:operation location=\"/GetFixturesByDateIntervalAndLeague\" />\r\n
+        \     <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByDateIntervalAndTeam\">\r\n      <http:operation
+        location=\"/GetFixturesByDateIntervalAndTeam\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeams\">\r\n      <http:operation location=\"/GetAllTeams\" />\r\n
+        \     <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetAllLeagues\">\r\n      <http:operation location=\"/GetAllLeagues\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetFixturesByLeagueAndSeason\">\r\n      <http:operation
+        location=\"/GetFixturesByLeagueAndSeason\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetLeagueStandingsBySeason\">\r\n
+        \     <http:operation location=\"/GetLeagueStandingsBySeason\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetAllTeamsByLeagueAndSeason\">\r\n      <http:operation location=\"/GetAllTeamsByLeagueAndSeason\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetEarliestMatchDatePerLeague\">\r\n      <http:operation
+        location=\"/GetEarliestMatchDatePerLeague\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetLiveScore\">\r\n      <http:operation
+        location=\"/GetLiveScore\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetLiveScoreByLeague\">\r\n
+        \     <http:operation location=\"/GetLiveScoreByLeague\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetPlayersByTeam\">\r\n      <http:operation location=\"/GetPlayersByTeam\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetPlayerById\">\r\n      <http:operation location=\"/GetPlayerById\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetTeam\">\r\n      <http:operation location=\"/GetTeam\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"GetOddsByFixtureMatchId\">\r\n      <http:operation
+        location=\"/GetOddsByFixtureMatchId\" />\r\n      <wsdl:input>\r\n        <mime:content
+        type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n
+        \       <mime:content part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"GetOddsByFixtureMatchId2\">\r\n
+        \     <http:operation location=\"/GetOddsByFixtureMatchId2\" />\r\n      <wsdl:input>\r\n
+        \       <mime:content type=\"application/x-www-form-urlencoded\" />\r\n      </wsdl:input>\r\n
+        \     <wsdl:output>\r\n        <mime:content part=\"Body\" type=\"text/xml\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"GetNextMatchOddsByLeague\">\r\n      <http:operation location=\"/GetNextMatchOddsByLeague\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:content
+        part=\"Body\" type=\"text/xml\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"CheckApiKey\">\r\n      <http:operation location=\"/CheckApiKey\"
+        />\r\n      <wsdl:input>\r\n        <mime:content type=\"application/x-www-form-urlencoded\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <mime:mimeXml
+        part=\"Body\" />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:service name=\"FootballDataDemo\">\r\n    <wsdl:port name=\"FootballDataDemoSoap\"
+        binding=\"tns:FootballDataDemoSoap\">\r\n      <soap:address location=\"http://www.xmlsoccer.com/FootballDataDemo.asmx\"
+        />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"FootballDataDemoSoap12\" binding=\"tns:FootballDataDemoSoap12\">\r\n
+        \     <soap12:address location=\"http://www.xmlsoccer.com/FootballDataDemo.asmx\"
+        />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"FootballDataDemoHttpGet\"
+        binding=\"tns:FootballDataDemoHttpGet\">\r\n      <http:address location=\"http://www.xmlsoccer.com/FootballDataDemo.asmx\"
+        />\r\n    </wsdl:port>\r\n    <wsdl:port name=\"FootballDataDemoHttpPost\"
+        binding=\"tns:FootballDataDemoHttpPost\">\r\n      <http:address location=\"http://www.xmlsoccer.com/FootballDataDemo.asmx\"
+        />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
+    http_version: 
+  recorded_at: Sat, 28 Mar 2015 08:16:58 GMT
+- request:
+    method: post
+    uri: http://www.xmlsoccer.com/FootballDataDemo.asmx
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://xmlsoccer.com/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:GetAllTeams><tns:ApiKey>RPVYEMAXSUNGZXSQUSQWFXPQYHUJHEPGWZYESAIUAATHDGGBNA</tns:ApiKey></tns:GetAllTeams></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - ! '"http://xmlsoccer.com/GetAllTeams"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '385'
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 28 Mar 2015 08:16:57 GMT
+      Content-Length:
+      - '9417'
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetAllTeamsResponse
+        xmlns="http://xmlsoccer.com/"><GetAllTeamsResult><XMLSOCCER.COM xmlns=""><Team><Team_Id>45</Team_Id><Name>Aberdeen</Name><Country>Scotland</Country><Stadium>Pittodrie
+        Stadium</Stadium><HomePageURL>http://www.afc.co.uk</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Aberdeen_F.C.</WIKILink></Team><Team><Team_Id>46</Team_Id><Name>St
+        Johnstone</Name><Country>Scotland</Country><Stadium>McDiarmid Park</Stadium><HomePageURL>http://www.perthstjohnstonefc.co.uk</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/St._Johnstone_F.C.</WIKILink></Team><Team><Team_Id>47</Team_Id><Name>Motherwell</Name><Country>Scotland</Country><Stadium>Fir
+        Park Stadium</Stadium><HomePageURL>http://www.motherwellfc.co.uk</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Motherwell_F.C.</WIKILink></Team><Team><Team_Id>48</Team_Id><Name>Inverness
+        C</Name><Country>Scotland</Country><Stadium>Caledonian Stadium</Stadium><HomePageURL>http://ictfc.com</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Inverness_Caledonian_Thistle_F.C.</WIKILink></Team><Team><Team_Id>49</Team_Id><Name>Rangers</Name><Country>Scotland</Country><Stadium>Ibrox
+        Stadium</Stadium><HomePageURL>http://www.rangers.co.uk</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Rangers_F.C.</WIKILink></Team><Team><Team_Id>50</Team_Id><Name>Hearts</Name><Country>Scotland</Country><Stadium>Tynecastle
+        Stadium</Stadium><HomePageURL>http://www.heartsfc.co.uk/page/Home</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.</WIKILink></Team><Team><Team_Id>51</Team_Id><Name>Dundee
+        United</Name><Country>Scotland</Country><Stadium>Tannadice Park</Stadium><HomePageURL>http://www.dundeeunitedfc.co.uk</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Dundee_United_F.C.</WIKILink></Team><Team><Team_Id>52</Team_Id><Name>Kilmarnock</Name><Country>Scotland</Country><Stadium>Rugby
+        Park</Stadium><HomePageURL>http://www.kilmarnockfc.co.uk/page/Home</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Kilmarnock_F.C.</WIKILink></Team><Team><Team_Id>53</Team_Id><Name>Hibernian</Name><Country>Scotland</Country><Stadium>Easter
+        Road</Stadium><HomePageURL>http://www.hibernianfc.co.uk/page/Home</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Hibernian_F.C.</WIKILink></Team><Team><Team_Id>54</Team_Id><Name>Celtic</Name><Country>Scotland</Country><Stadium>Celtic
+        Park</Stadium><HomePageURL>http://www.celticfc.net</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Celtic_F.C.</WIKILink></Team><Team><Team_Id>55</Team_Id><Name>Dunfermline</Name><Country>Scotland</Country><Stadium>East
+        End Park</Stadium><HomePageURL>http://www.dafc.co.uk/page/Home</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Dunfermline_Athletic_F.C.</WIKILink></Team><Team><Team_Id>56</Team_Id><Name>St
+        Mirren</Name><Country>Scotland</Country><Stadium>St. Mirren Park</Stadium><HomePageURL>http://www.saintmirren.net/pages/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/St._Mirren_F.C.</WIKILink></Team><Team><Team_Id>228</Team_Id><Name>Hamilton</Name><Country>Scotland</Country><Stadium>New
+        Douglas Park</Stadium><HomePageURL>http://www.acciesfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Hamilton_Academical_F.C.</WIKILink></Team><Team><Team_Id>254</Team_Id><Name>Falkirk</Name><Country>Scotland</Country><Stadium>Falkirk
+        Stadium</Stadium><HomePageURL>http://www.falkirkfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Falkirk_F.C.</WIKILink></Team><Team><Team_Id>291</Team_Id><Name>Gretna</Name><Country>Scotland</Country><Stadium
+        /><HomePageURL /><WIKILink>http://en.wikipedia.org/wiki/Gretna_F.C.</WIKILink></Team><Team><Team_Id>360</Team_Id><Name>Ross
+        County</Name><Country>Scotland</Country><Stadium>Victoria Park</Stadium><HomePageURL>http://www.rosscountyfootballclub.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Ross_County_F.C.</WIKILink></Team><Team><Team_Id>522</Team_Id><Name>Dundee
+        FC</Name><Country>Scotland</Country><Stadium>Dens Park</Stadium><HomePageURL>http://www.dundeefc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Dundee_F.C.</WIKILink></Team><Team><Team_Id>556</Team_Id><Name>Airdrie
+        Utd</Name><Country>Scotland</Country><Stadium>New Broomfield</Stadium><HomePageURL>http://www.airdriefc.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Airdrie_United_F.C.</WIKILink></Team><Team><Team_Id>557</Team_Id><Name>Dumbarton</Name><Country>Scotland</Country><Stadium>The
+        Bet Butler Stadium</Stadium><HomePageURL>http://www.dumbartonfootballclub.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Dumbarton_F.C.</WIKILink></Team><Team><Team_Id>558</Team_Id><Name>Cowdenbeath</Name><Country>Scotland</Country><Stadium>Central
+        Park</Stadium><HomePageURL>http://www.cowdenbeathfc.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Cowdenbeath_F.C.</WIKILink></Team><Team><Team_Id>559</Team_Id><Name>Morton</Name><Country>Scotland</Country><Stadium>Cappielow
+        Park</Stadium><HomePageURL>http://www.gmfc.net/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Greenock_Morton_F.C.</WIKILink></Team><Team><Team_Id>560</Team_Id><Name>Livingston</Name><Country>Scotland</Country><Stadium>Almondvale
+        Stadium</Stadium><HomePageURL>http://www.livingstonfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Livingston_F.C.</WIKILink></Team><Team><Team_Id>561</Team_Id><Name>Partick</Name><Country>Scotland</Country><Stadium>Firhill
+        Stadium</Stadium><HomePageURL>http://www.ptfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Partick_Thistle_F.C.</WIKILink></Team><Team><Team_Id>562</Team_Id><Name>Raith
+        Rvs</Name><Country>Scotland</Country><Stadium>Stark''s Park</Stadium><HomePageURL>http://www.raithrovers.net/index.php/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Raith_Rovers_F.C.</WIKILink></Team><Team><Team_Id>563</Team_Id><Name>Ayr</Name><Country>Scotland</Country><Stadium>Somerset
+        Park</Stadium><HomePageURL>http://www.ayrunitedfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Ayr_United_F.C.</WIKILink></Team><Team><Team_Id>565</Team_Id><Name>Stirling</Name><Country>Scotland</Country><Stadium>Forthbank
+        Stadium</Stadium><HomePageURL>http://www.stirlingalbionfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Stirling_Albion_F.C.</WIKILink></Team><Team><Team_Id>566</Team_Id><Name>Clyde</Name><Country>Scotland</Country><Stadium>Broadwood
+        Stadium</Stadium><HomePageURL>http://www.clydefc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Clyde_F.C.</WIKILink></Team><Team><Team_Id>674</Team_Id><Name>Brechin</Name><Country>Scotland</Country><Stadium>Glebe
+        Park</Stadium><HomePageURL>http://www.brechincity.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Brechin_City_F.C.</WIKILink></Team><Team><Team_Id>675</Team_Id><Name>Stranraer</Name><Country>Scotland</Country><Stadium>Stair
+        Park</Stadium><HomePageURL>http://www.stranraerfc.org/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Stranraer_F.C.</WIKILink></Team><Team><Team_Id>706</Team_Id><Name>Arbroath</Name><Country>Scotland</Country><Stadium>Gayfield
+        Park</Stadium><HomePageURL>http://www.arbroathfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Arbroath_F.C.</WIKILink></Team><Team><Team_Id>707</Team_Id><Name>Alloa</Name><Country>Scotland</Country><Stadium>Recreation
+        Park</Stadium><HomePageURL>http://www.alloaathletic.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Alloa_Athletic_F.C.</WIKILink></Team><Team><Team_Id>760</Team_Id><Name>Queen
+        of South</Name><Country>Scotland</Country><Stadium>Palmerston Park</Stadium><HomePageURL>http://www.qosfc.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Queen_of_the_South_F.C.</WIKILink></Team><Team><Team_Id>926</Team_Id><Name>EAST
+        FIFE</Name><Country>Scotland</Country><Stadium>Bayview Stadium</Stadium><HomePageURL>http://www.eastfifefc.info/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/East_Fife_F.C.</WIKILink></Team><Team><Team_Id>927</Team_Id><Name>STENHOUSEMUIR</Name><Country>Scotland</Country><Stadium>Ochilview
+        Park</Stadium><HomePageURL>http://www.stenhousemuirfc.com/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Stenhousemuir_F.C.</WIKILink></Team><Team><Team_Id>928</Team_Id><Name>FORFAR</Name><Country>Scotland</Country><Stadium>Station
+        Park</Stadium><HomePageURL>http://www.forfarathletic.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Forfar_Athletic_F.C.</WIKILink></Team><Team><Team_Id>1095</Team_Id><Name>PETERHEAD
+        (SF) </Name><Country>Scotland</Country><Stadium>Balmoor</Stadium><HomePageURL>http://www.peterheadfc.co.uk/</HomePageURL><WIKILink>http://en.wikipedia.org/wiki/Peterhead_F.C.</WIKILink></Team><AccountInformation>Data
+        requested at 3/28/2015 9:16:58 AM from 77.97.154.228, Username: ShadowKoBolt.
+        You are correctly logged into the Demo-service, and only records from the
+        Scottish Premier League can be extracted here. If no data is shown, no matches
+        were found using the specified parameters. If you are using the livescore-method
+        and no matches are returned, it is because no matches is currently being played
+        in the Scottish Premier League.</AccountInformation></XMLSOCCER.COM></GetAllTeamsResult></GetAllTeamsResponse></soap:Body></soap:Envelope>'
+    http_version: 
+  recorded_at: Sat, 28 Mar 2015 08:16:59 GMT
+recorded_with: VCR 2.9.3
