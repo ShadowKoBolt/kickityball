@@ -4,14 +4,18 @@ gem 'rails', '4.2.1'
 gem 'rails-api'
 gem 'pg'
 gem 'figaro'
-gem 'xmlsoccer'
+gem 'excon'
+gem 'jbuilder'
+gem 'chronic'
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'guard-rspec'
   gem 'vcr'
   gem 'awesome_print'
   gem 'pry'
+end
+
+group :test do
   gem 'webmock'
 end
 

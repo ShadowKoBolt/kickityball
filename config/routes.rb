@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get "stadiums" => "stadiums#index"
+  get "teams" => "teams#index"
+  get "teams/:slug/fixtures/home" => "fixtures#index", as: "team_home_fixtures"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
