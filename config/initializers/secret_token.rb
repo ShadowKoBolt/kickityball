@@ -17,6 +17,6 @@
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
 #
-SECRETS = YAML.load(File.read(File.expand_path('../config/secrets.yml', __FILE__)))
+SECRETS = YAML.load(File.read(File.expand_path('../../secrets.yml', __FILE__)))
 
 Kickityball::Application.config.secret_token = SECRETS[Rails.env]["secret_token"]
