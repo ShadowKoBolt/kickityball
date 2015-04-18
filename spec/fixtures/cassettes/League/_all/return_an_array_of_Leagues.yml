@@ -25,19 +25,17 @@ http_interactions:
       Etag:
       - ! '"de4807b08fa8331041386d3f8ddf9191"'
       X-Pal-Host:
-      - pal177.back.live.telhc.local:80
+      - pal065.back.live.cwwtf.local:80
       Content-Length:
       - '83976'
       Date:
-      - Sat, 18 Apr 2015 08:47:33 GMT
+      - Sat, 18 Apr 2015 09:00:58 GMT
       Connection:
       - keep-alive
       X-Cache-Action:
-      - HIT
-      X-Cache-Hits:
-      - '4'
+      - MISS
       X-Cache-Age:
-      - '114'
+      - '0'
       X-Lb-Nocache:
       - 'true'
       Vary:
@@ -1913,5 +1911,5 @@ http_interactions:
         Pjwvc2NyaXB0PiAgICAgICAgICAgICAgPC9ib2R5PiA8L2h0bWw+ICAgICAg
         ICAgICAg
     http_version: 
-  recorded_at: Sat, 18 Apr 2015 08:47:33 GMT
+  recorded_at: Sat, 18 Apr 2015 09:00:58 GMT
 recorded_with: VCR 2.9.3
