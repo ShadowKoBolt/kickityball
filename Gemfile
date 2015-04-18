@@ -6,7 +6,6 @@ gem 'pg'
 gem 'figaro'
 gem 'excon'
 gem 'jbuilder'
-gem 'rake'
 
 group 'production' do
   gem 'rails_12factor'

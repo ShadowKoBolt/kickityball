@@ -159,7 +159,6 @@ DEPENDENCIES
   rails (= 4.2.1)
   rails-api
   rails_12factor
-  rake
   rspec-rails
   vcr
   webmock
