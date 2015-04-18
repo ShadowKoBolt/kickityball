@@ -6,6 +6,7 @@ gem 'pg'
 gem 'figaro'
 gem 'excon'
 gem 'jbuilder'
+gem 'rails_12factor'
 
 group :test, :development do
   gem 'rspec-rails'
