@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Fixture do
-  describe ".find_all_by_team_slug", vcr: {cassette_name: "fixtures"} do
+  describe ".find_all_by_team_slug", :vcr do
     context "with valid team slug" do
       it "returns an array of Fixtures" do
         expect(Fixture.find_all_by_team_slug("aberdeen").collect{|f| f.class}.uniq).to eq([Fixture])
