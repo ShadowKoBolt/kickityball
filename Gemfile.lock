@@ -40,7 +40,6 @@ GEM
     arel (6.0.0)
     awesome_print (1.6.1)
     builder (3.2.2)
-    chronic (0.10.2)
     coderay (1.1.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
@@ -147,7 +146,6 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  chronic
   excon
   figaro
   jbuilder

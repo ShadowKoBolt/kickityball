@@ -6,7 +6,6 @@ gem 'pg'
 gem 'figaro'
 gem 'excon'
 gem 'jbuilder'
-gem 'chronic'
 
 group :test, :development do
   gem 'rspec-rails'
